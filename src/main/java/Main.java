@@ -45,7 +45,12 @@ public class Main {
 
         for (Map.Entry<School, List<Student>> entry : map.entrySet())
         {
-            System.out.println("Szkoła: " + entry.getKey() + " " + "Studenci: " + entry.getValue());
+            System.out.println( " - " + entry.getKey() );
+            System.out.println();
+            for(Student s : entry.getValue()){
+                System.out.println("    - " + s.getName() + " " + s.getLastname());
+                System.out.println();
+            }
         }
 
     }
